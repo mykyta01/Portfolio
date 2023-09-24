@@ -8,10 +8,11 @@
 
     &--menu {
       row-gap: 25px;
-      padding-inline: 30px;
+      padding-inline: 15px;
 
       @include onTablet {
         row-gap: 40px;
+        padding-inline: 45px;
       }
     }
 
@@ -23,7 +24,7 @@
   }
 
   &__link {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     line-height: 20px;
     color: $main-black-color;
@@ -31,8 +32,12 @@
     text-decoration: none;
     text-transform: uppercase;
 
+    @include onTablet {
+      font-size: 17px;
+    }
+
     &:hover {
-      color: #55329c;
+      color: $main-green-color;
     }
 
     &--main {

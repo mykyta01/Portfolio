@@ -70,6 +70,10 @@
       font-weight: 300;
 
       @include onTablet {
+        font-size: 18px;
+      }
+
+      @include onDesktop {
         font-size: 24px;
       }
     }
@@ -84,6 +88,10 @@
       @include hover(transform, scale(1.1));
 
       @include onTablet {
+        font-size: 16px;
+      }
+
+      @include onDesktop {
         font-size: 20px;
       }
     }
@@ -97,7 +105,7 @@
     height: 300px;
 
     @include onTablet {
-      height: 350px;
+      height: 275px;
       grid-row: 2;
       grid-column: 1 / 9;
     }
@@ -117,7 +125,7 @@
     height: 300px;
 
     @include onTablet {
-      height: 350px;
+      height: 275px;
       grid-row: 2;
       grid-column: 1 / 9;
     }
@@ -137,7 +145,7 @@
     height: 300px;
 
     @include onTablet {
-      height: 350px;
+      height: 275px;
       grid-row: 2;
       grid-column: 1 / 9;
     }
@@ -157,7 +165,7 @@
     height: 300px;
 
     @include onTablet {
-      height: 350px;
+      height: 275px;
       grid-row: 2;
       grid-column: 1 / 9;
     }
