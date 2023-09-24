@@ -1,4 +1,10 @@
 .footer {
+  padding-inline: 30px;
+
+  &__content {
+    padding-inline: 30px;
+  }
+
   &__top {
     display: none;
 

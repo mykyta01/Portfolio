@@ -1,6 +1,16 @@
 .header {
   &__content {
+    padding-inline: 30px;
     padding-top: 25px;
+    @include onTablet {
+      padding-inline: 30px;
+      margin-bottom: 130px;
+    }
+
+    @include onDesktop {
+      padding-inline: 30px;
+      margin-bottom: 130px;
+    }
   }
 
   &__top {
@@ -27,9 +37,13 @@
 
   &__name {
     margin: 0;
-    font-size: 35px;
+    font-size: 20px;
     color: $main-black-color;
     font-weight: 700;
+
+    @include onTablet {
+      font-size: 35px;
+    }
   }
 
   &__logo {
@@ -83,7 +97,7 @@
   }
 
   &__description {
-    padding-inline: 45px;
+    padding-inline: 50px;
 
     @include onTablet {
       grid-column: 1 / 5;
@@ -111,7 +125,7 @@
   &__title {
     margin: 0;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 21px;
     font-weight: 700;
     line-height: 52px;
     color: $main-black-color;
@@ -128,7 +142,7 @@
   &__text {
     margin: 0;
     padding-bottom: 50px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
     color: $main-black-color;

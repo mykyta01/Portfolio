@@ -7,6 +7,7 @@ section {
   border-top: 1px solid rgb(212, 212, 212);
   @include pageGrid;
 
+  padding-bottom: 50px;
   padding-top: 50px;
 
   @include onTablet {
@@ -34,18 +35,18 @@ html:has(.page__menu:target) {
   }
 
   &__header {
-    max-width: 1194px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
   &__main {
-    max-width: 1194px;
+    max-width: 1280px;
     margin: 0 auto;
     padding-inline: 30px;
   }
 
   &__footer {
-    max-width: 1194px;
+    max-width: 1280px;
     margin: 0 auto;
   }
 
