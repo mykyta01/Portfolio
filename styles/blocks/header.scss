@@ -1,0 +1,162 @@
+.header {
+  &__content {
+    padding-inline: 30px;
+    padding-top: 25px;
+    @include onTablet {
+      padding-inline: 30px;
+      margin-bottom: 130px;
+    }
+
+    @include onDesktop {
+      padding-inline: 30px;
+      margin-bottom: 130px;
+    }
+  }
+
+  &__top {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include onTablet {
+      padding-inline: 30px;
+      margin-bottom: 130px;
+    }
+
+    @include onDesktop {
+      padding-inline: 30px;
+      margin-bottom: 130px;
+    }
+  }
+
+  &__logo-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 20px;
+    color: $main-black-color;
+    font-weight: 700;
+
+    @include onTablet {
+      font-size: 30px;
+    }
+
+    @include onDesktop {
+      font-size: 35px;
+    }
+  }
+
+  &__logo {
+    height: 50px;
+    width: 50px;
+  }
+
+  &__nav {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      column-gap: 50px;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17px;
+    color: $main-black-color;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-green-color;
+    }
+
+    @include onDesktop {
+      line-height: 20px;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 50px;
+
+    @include onTablet {
+      @include pageGrid;
+      padding-inline: 30px;
+      margin-bottom: 130px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 130px;
+    }
+  }
+
+  &__description {
+    padding-inline: 50px;
+
+    @include onTablet {
+      grid-column: 1 / 5;
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 7;
+    }
+  }
+
+  &__bg-video {
+    padding-inline: 30px;
+
+    @include onTablet {
+      padding-inline: 0;
+      grid-column: 5 / 9;
+    }
+
+    @include onDesktop {
+      padding-inline: 0;
+      grid-column: 7 / 13;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 52px;
+    color: $main-black-color;
+
+    @include onTablet {
+      font-size: 31px;
+    }
+
+    @include onDesktop {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: $main-black-color;
+
+    @include onTablet {
+      font-size: 21px;
+    }
+
+    @include onDesktop {
+      font-size: 31px;
+    }
+  }
+}

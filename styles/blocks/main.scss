@@ -1,0 +1,184 @@
+.main {
+  &__content {
+    padding-inline: 30px;
+  }
+
+  &__name {
+    @include onTablet {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      grid-column: 1 / 5;
+      grid-row: 1;
+    }
+
+    &--text {
+      margin-bottom: 20px;
+      padding-left: 3.2rem;
+      font-family: Helvetica, sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      text-transform: uppercase;
+
+      @include onTablet {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+
+    &--logo {
+      height: 50px;
+      width: 50px;
+    }
+
+    &--title {
+      margin: 0;
+      font-size: 21px;
+      font-weight: 700;
+      color: $main-black-color;
+
+      @include onTablet {
+        font-size: 35px;
+      }
+    }
+  }
+
+  &__description {
+    display: block;
+    padding-bottom: 50px;
+    padding-inline: 48px;
+    text-align: start;
+
+    @include onTablet {
+      grid-column: 5 / 9;
+      grid-row: 1;
+    }
+
+    @include onDesktop {
+      grid-column: 7 / 13;
+    }
+
+    &--text {
+      margin: 0;
+      padding-bottom: 20px;
+      font-size: 14px;
+      font-family: Helvetica, sans-serif;
+      font-weight: 300;
+
+      @include onTablet {
+        font-size: 18px;
+      }
+
+      @include onDesktop {
+        font-size: 24px;
+      }
+    }
+
+    &--link {
+      display: inline-block;
+      padding-bottom: 10px ;
+      font-size: 14px;
+      color: $main-black-color;
+      text-decoration: none;
+      font-weight: 700;
+
+      @include hover(transform, scale(1.1));
+
+      @include onTablet {
+        font-size: 16px;
+      }
+
+      @include onDesktop {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__presentation-crazyBaby {
+    background-image: url("/images/crazyBaby.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+
+    @include onTablet {
+      height: 275px;
+      grid-row: 2;
+      grid-column: 1 / 9;
+    }
+
+    @include onDesktop {
+      height: 425px;
+      grid-row: 2;
+      grid-column: 1 / 13;
+    }
+  }
+
+  &__presentation-Namu {
+    background-image: url("/images/Namu.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+
+    @include onTablet {
+      height: 275px;
+      grid-row: 2;
+      grid-column: 1 / 9;
+    }
+
+    @include onDesktop {
+      height: 425px;
+      grid-row: 2;
+      grid-column: 1 / 13;
+    }
+  }
+
+  &__presentation-creativeBakery {
+    background-image: url("/images/creativeBakery.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+
+    @include onTablet {
+      height: 275px;
+      grid-row: 2;
+      grid-column: 1 / 9;
+    }
+
+    @include onDesktop {
+      height: 425px;
+      grid-row: 2;
+      grid-column: 1 / 13;
+    }
+  }
+
+  &__presentation-myBike {
+    background-image: url("/images/myBike.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+
+    @include onTablet {
+      height: 275px;
+      grid-row: 2;
+      grid-column: 1 / 9;
+    }
+
+    @include onDesktop {
+      height: 425px;
+      grid-row: 2;
+      grid-column: 1 / 13;
+    }
+  }
+
+  &__about {
+    margin-bottom: 50px;
+  }
+}
