@@ -1,2 +1,2 @@
 # Portfolio
-- [DEMO LINK](https://mromanishyn.com/)
+- [LINK](https://mromanishyn.com/)
