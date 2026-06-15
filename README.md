@@ -1,2 +1,2 @@
 # Portfolio
-- [LINK](https://mromanishyn.com/)
+- [LINK](https://mykyta01.github.io/Portfolio/)
