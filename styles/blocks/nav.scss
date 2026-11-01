@@ -1,3 +1,6 @@
+@use "../utils/vars" as *;
+@use "../utils/mixins" as *;
+
 .nav {
   &__list {
     margin: 0;
